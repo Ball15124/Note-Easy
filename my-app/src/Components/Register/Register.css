@@ -1,4 +1,4 @@
-.LoginPage{
+.RegisterPage{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,47 +6,47 @@
     background: url('../Assets/background.jpg');
 }
 
-.LoginPage .wrapper{ 
+.RegisterPage .wrapper{ 
     width: 420px;
     background-color: transparent;
     border: 2px solid transparent;
     backdrop-filter: blur(15px);
     border-radius: 20px;
-    padding: 20px;
     box-shadow: 0 0 10px black;
+    padding: 20px;
     
 }
-.LoginPage .wrapper h1{
+.RegisterPage .wrapper h1{
     text-align: center;
 }
 
-.LoginPage .wrapper a{
+.RegisterPage .wrapper a{
     text-align: right;
 }
 
-.LoginPage .input-box {
+.RegisterPage .input-box {
     position: relative;
     width: 100%; 
     height: 50px; 
     margin: 30px 0 20px 0;
 }
 
-.LoginPage .input-box input{
+.RegisterPage.RegisterPage .input-box input{
     width: 93.92%;
     height: 100%;
     border: none;
     outline: none;
-    border: 2px solid rgb(218, 216, 216);
+    border: 2px solid rgba(219, 219, 219, 0.993);
     border-radius: 40px;
     background: transparent;
     padding-left: 20px;
 }
 
-.LoginPage .input-box input::placeholder {
+.RegisterPage .input-box input::placeholder {
     color: white;
 }
 
-.LoginPage .input-box .icon {
+.RegisterPage .input-box .icon {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -55,24 +55,13 @@
     color: white;
 }
 
-.LoginPage .forget{
-    font-size: 15px;
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-.LoginPage .forget a{
-    color: white;
-    text-decoration: none;
-}
-
-.LoginPage .button-sign {
+.RegisterPage .button-sign {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.LoginPage .button-sign button{
+.RegisterPage .button-sign button{
     width: 100%;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -81,13 +70,13 @@
     font-weight: bold;
 }
 
-.LoginPage .Create-account {
+.RegisterPage .already {
     font-size: 15px;
     text-align: center;
     margin: 10px 0 10px 0;
 }
 
-.LoginPage .Create-account a{
+.RegisterPage .already a{
     color: white;
     text-decoration: none;
 }
