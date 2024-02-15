@@ -6,21 +6,20 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase'
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import Auth from '../Auth/Auth';
 
 export const Login = () => {
-  const [email , setEmail] = useState("");
-  const [password , setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const signIn = (e) =>{
+  const signIn = (e) => {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, email,password).then((userCredential)=> {
+    signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
       console.log(userCredential);
       navigate('/home')
     })
-    .catch((error) => {
-      console.log(error);
-    })
+      .catch((error) => {
+        console.log(error);
+      })
   }
   return (
     <div className='LoginPage'>
@@ -28,13 +27,12 @@ export const Login = () => {
         <form onSubmit={signIn}>
           <h1>Sign In</h1>
           <div className='input-box'>
-            <input type='text' placeholder='Email' value={email} onChange={(e)=> setEmail(e.target.value)} required/>
+            <input type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required />
             <FaUserNinja className='icon' />
           </div>
           <div className='input-box'>
-            
-            <input type='text' placeholder='Password' value={password} onChange={(e)=> setPassword(e.target.value)}required/>
-            <RiLockPasswordFill className='icon'/>
+            <input type='text' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
+            <RiLockPasswordFill className='icon' />
           </div>
           <div className='forget'>
             <a href='#'>forgot password ?</a>
@@ -47,7 +45,7 @@ export const Login = () => {
           <div className='Create-account'>
             <Link to='/Register'>Create Account</Link>
           </div>
-          
+
         </form>
       </div>
     </div>

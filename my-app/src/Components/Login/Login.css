@@ -18,6 +18,7 @@
 }
 .LoginPage .wrapper h1{
     text-align: center;
+    color: white;
 }
 
 .LoginPage .wrapper a{
@@ -40,6 +41,11 @@
     border-radius: 40px;
     background: transparent;
     padding-left: 20px;
+    transition: 0.1s ease-in-out;
+}
+
+.LoginPage .input-box input:focus-within{
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .LoginPage .input-box input::placeholder {
@@ -79,6 +85,14 @@
     font-size: 15px;
     padding: 10px;
     font-weight: bold;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.LoginPage .button-sign button:hover{
+    box-shadow: 0 0 10px black;
+    background-color: black;
+    color: white;
 }
 
 .LoginPage .Create-account {
@@ -90,6 +104,11 @@
 .LoginPage .Create-account a{
     color: white;
     text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+.LoginPage .Create-account a:hover{
+    color: rgb(0, 0, 0);
 }
 
 

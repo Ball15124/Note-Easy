@@ -10,7 +10,15 @@
     box-shadow: 0 0 10px black;
 }
 
-.Navbar .link{
+.Navbar .logo {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.Navbar .link {
     color: rgb(0, 0, 0);
     font-size: 20px;
     text-decoration: none;
@@ -18,13 +26,14 @@
 
 .Navbar .search-box {
     position: absolute;
-    right: 60px;
+    right: 33%;
     width: 30%;
     height: 30px;
     display: inline-flex;
+    padding-bottom: 3px;
 }
 
-.Navbar .search-box input{
+.Navbar .search-box input {
     width: 100%;
     height: 100%;
     border: 1px solid rgb(179, 176, 176);
@@ -55,3 +64,29 @@
     justify-content: center;
     display: flex;
 }
+
+.Navbar .right-side {
+    display: inline-flex;
+}
+
+.Navbar .sign-out {
+    margin-top: 7px;
+    padding-right: 5px;
+}
+
+.Navbar .sign-out .button-sign {
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.342);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.Navbar .sign-out .button-sign:hover{
+    background-color: red;
+    box-shadow:  0 0 3px black;
+    font-weight: bold;
+}
+
