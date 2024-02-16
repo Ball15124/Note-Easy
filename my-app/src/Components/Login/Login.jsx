@@ -7,6 +7,11 @@ import { useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase'
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
+
+
+
+
+
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,6 +23,7 @@ export const Login = () => {
       navigate('/home')
     })
       .catch((error) => {
+        alert('Wrong email or password')
         console.log(error);
       })
   }

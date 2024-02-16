@@ -15,22 +15,23 @@ function App() {
   return (
     <>
       <Router>
-          <Routes>
-              {}
-                <Route
-                  exact path="/Login"
-                  element={<Login/>}
-                /> 
-              {}
-                <Route
-                  path="/Register" element={<Register />}
-                />
-              {}
-                <Route
-                  path="/home" element={<Home />}
-                />       
-                </Routes>
-          </Router>
+        <Routes>
+          <Route path="/" element={<Navigate to="/Login" />} />
+          { }
+          <Route
+            exact path="/Login"
+            element={<Login />}
+          />
+          { }
+          <Route
+            path="/Register" element={<Register />}
+          />
+          { }
+          <Route
+            path="/home" element={<Home />}
+          />
+        </Routes>
+      </Router>
     </>
     // <div>
     //   <Login/>

@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     box-shadow: 0 0 10px black;
 }
 
@@ -16,12 +16,14 @@
     margin-right: 5px;
     padding-left: 20px;
     font-size: 20px;
+    color: rgb(137, 42, 146);
 }
 
 .Navbar .link {
-    color: rgb(0, 0, 0);
+    color: rgb(137, 42, 146);
     font-size: 20px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .Navbar .search-box {

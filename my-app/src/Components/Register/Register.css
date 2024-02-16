@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../Assets/background.jpg');
+    background: url('../Assets/1d26c5b022c071fb8f1e3ae2f0f65ba9.gif')
+    no-repeat;
 }
 
 .RegisterPage .wrapper{ 
@@ -18,6 +19,7 @@
 }
 .RegisterPage .wrapper h1{
     text-align: center;
+    color: white;
 }
 
 .RegisterPage .wrapper a{
@@ -31,7 +33,7 @@
     margin: 30px 0 20px 0;
 }
 
-.RegisterPage.RegisterPage .input-box input{
+.RegisterPage .input-box input{
     width: 93.92%;
     height: 100%;
     border: none;
@@ -40,6 +42,16 @@
     border-radius: 40px;
     background: transparent;
     padding-left: 20px;
+    transition: 0.1s ease-in-out;
+}
+
+.RegisterPage .input-box input:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+.RegisterPage .input-box input:focus-within{
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .RegisterPage .input-box input::placeholder {
@@ -68,6 +80,13 @@
     font-size: 15px;
     padding: 10px;
     font-weight: bold;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.RegisterPage .button-sign button:hover {
+    background-color: black;
+    color: white;
 }
 
 .RegisterPage .already {
@@ -79,6 +98,14 @@
 .RegisterPage .already a{
     color: white;
     text-decoration: none;
+}
+
+.already .sign {
+    transition: 0.1s ease-in-out;
+}
+
+.already .sign:hover {
+    color: black;
 }
 
 

@@ -2,26 +2,6 @@ import React from 'react'
 
 
 const CreateNote = ({ inputTextTitle, inputText, setInputTextTitle, setInputText, saveHandler, tags, setTags, tagArray, setTagArray, handleAddTag, handleRemoveTag }) => {
-  // const char= 50;
-  // const charLimit = char - inputText.length;
-  // const [tags, setTags] = useState('');
-  // const [tagArray, setTagArray] = useState([]);
-
-  // const handleAddTag = () => {
-  //   if (tags.trim() !== '') {
-  //     setTagArray([...tagArray, tags.trim()]);
-  //     setTags('');
-  //   }
-  // };
-
-  // const handleRemoveTag = (index) => {
-  //   const newTags = [...tagArray];
-  //   newTags.splice(index, 1);
-  //   setTagArray(newTags);
-  // };
-
-
-
   return (
     <div className='note'>
       <textarea className='note-title'
@@ -48,7 +28,7 @@ const CreateNote = ({ inputTextTitle, inputText, setInputTextTitle, setInputText
           </span>
         ))}
       </div>
-      <div className='note_footer'>
+      <div className='note_footer_create'>
         <div className='btn-container'>
            <input
           type="text"
@@ -57,7 +37,7 @@ const CreateNote = ({ inputTextTitle, inputText, setInputTextTitle, setInputText
           value={tags}
           onChange={(e) => setTags(e.target.value)}
         />
-        <button className='note_save' onClick={handleAddTag}>Add Tag</button>
+        <button className='note_save' onClick={handleAddTag}>Add</button>
         </div>
           <button className='note_save' onClick={saveHandler}>Save</button>
       </div>

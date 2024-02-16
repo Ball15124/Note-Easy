@@ -3,22 +3,24 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../Assets/background.jpg');
+    background: url('../Assets/1d26c5b022c071fb8f1e3ae2f0f65ba9.gif')
+    no-repeat;
+    
 }
 
 .LoginPage .wrapper{ 
     width: 420px;
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
     border: 2px solid transparent;
     backdrop-filter: blur(15px);
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
     
 }
 .LoginPage .wrapper h1{
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .LoginPage .wrapper a{
@@ -37,11 +39,15 @@
     height: 100%;
     border: none;
     outline: none;
-    border: 2px solid rgb(218, 216, 216);
+    border: 2px solid rgb(191, 144, 206);
     border-radius: 40px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0);
     padding-left: 20px;
     transition: 0.1s ease-in-out;
+}
+
+.LoginPage .input-box input:hover{
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .LoginPage .input-box input:focus-within{
@@ -49,7 +55,7 @@
 }
 
 .LoginPage .input-box input::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .LoginPage .input-box .icon {
@@ -58,7 +64,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .LoginPage .forget{
@@ -68,7 +74,7 @@
 }
 
 .LoginPage .forget a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -87,12 +93,14 @@
     font-weight: bold;
     transition: 0.1s ease-in-out;
     cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 .LoginPage .button-sign button:hover{
-    box-shadow: 0 0 10px black;
-    background-color: black;
-    color: white;
+    box-shadow: 0 0 10px rgb(2, 2, 2);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .LoginPage .Create-account {
@@ -102,7 +110,7 @@
 }
 
 .LoginPage .Create-account a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: 0.1s ease-in-out;
 }

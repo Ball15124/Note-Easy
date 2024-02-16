@@ -12,18 +12,23 @@ import { auth } from '../../firebase'
 
 export const Register = () => {
   const navigate = useNavigate()
-  const [email , setEmail] = useState("");
-  const [password , setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [repeatPass, setRepeatPass] = useState("");
 
-  const signUp = (e) =>{
+  const signUp = (e) => {
     e.preventDefault();
-    createUserWithEmailAndPassword(auth, email,password).then((userCredential)=> {
-      console.log(userCredential);
-      navigate('/Login')
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+    if (password != repeatPass) {
+      alert("Passwords do not match")
+    } else {
+      createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
+        console.log(userCredential);
+        navigate('/Login')
+      })
+        .catch((error) => {
+          console.log(error);
+        })
+    }
   }
   return (
     <div className='RegisterPage'>
@@ -31,20 +36,16 @@ export const Register = () => {
         <form onSubmit={signUp}>
           <h1>Register</h1>
           <div className='input-box'>
-            <input type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}required/>
-            <MdEmail className='icon'/>
+            <input type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <MdEmail className='icon' />
           </div>
           <div className='input-box'>
-          <FaUserNinja className='icon' />
-            <input type='text' placeholder='Username' />
+            <RiLockPasswordFill className='icon' />
+            <input type='text' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
           </div>
           <div className='input-box'>
-          <RiLockPasswordFill className='icon'/>
-            <input type='text' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}required/>
-          </div>
-          <div className='input-box'>
-          <RiLockPasswordFill className='icon'/>
-            <input type='text' placeholder='Repeat Password' />
+            <RiLockPasswordFill className='icon' />
+            <input type='text' placeholder='Repeat Password' onChange={(e) => setRepeatPass(e.target.value)} required />
           </div>
           <div className='button-sign'>
             <button type='submit'>
@@ -52,7 +53,7 @@ export const Register = () => {
             </button>
           </div>
           <div className='already'>
-            <a>Already have account ? </a><Link to='/Login'>Sign in</Link>
+            <a>Already have account ? </a><Link className='sign'to='/Login'>Sign in</Link>
           </div>
         </form>
       </div>
