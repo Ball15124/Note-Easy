@@ -18,11 +18,11 @@ const Note = ({ id, title, text, creater, date, editHandler, deleteHandler, tagA
         <div className='footer-btn'>
           <button className='note_save' onClick={() => deleteHandler(id)}>Delete</button> &nbsp;
           <button className='note_save' onClick={() => editHandler(id, title, text, tagArray)}>Edit</button>
-          <button className='note_save' onClick={() => setShowHistory(!showHistory)}>Show History</button>
+          <button className='note_save' onClick={() => setShowHistory(!showHistory)}>{!showHistory ? "Show History" : "Hide History"}</button>
         </div>
 
       </div>
-      {showHistory && history && (
+      {showHistory && history && (    
         <div className="history">
           {history.map((version, index) => (
             <div key={index} className="history-item">

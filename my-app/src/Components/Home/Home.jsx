@@ -93,7 +93,7 @@ export const Home = () => {
             return;
         }
         const today = new Date();
-        const currentDate = today.toDateString();
+        const currentDate = today.toDateString() + ", " + today.toLocaleTimeString();
         if (editToggle) {
             // setDate(`${dates}/${month}/${year}`)      
             const editedNoteIndex = notes.findIndex(note => note.id === editToggle);

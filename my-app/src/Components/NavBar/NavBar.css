@@ -26,14 +26,26 @@
     font-weight: bold;
 }
 
+@media screen and (max-width: 375px) {
+    .Navbar .link {
+        font-size: 15px;
+    }
+
+}
+
 .Navbar .search-box {
-    position: absolute;
-    right: 33%;
+    /* right: 33%; */
     width: 30%;
     height: 30px;
     display: inline-flex;
     padding-bottom: 3px;
 }
+
+/* @media screen and (max-width: 360px) {
+    .Navbar .search-box input {
+        height: 80%;
+    }
+} */
 
 .Navbar .search-box input {
     width: 100%;
@@ -90,5 +102,12 @@
     background-color: red;
     box-shadow:  0 0 3px black;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .Navbar .logo {
+        display: none;
+    }
+    
 }
 
