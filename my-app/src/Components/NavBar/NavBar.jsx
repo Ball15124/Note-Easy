@@ -31,6 +31,7 @@ const NavBar = (props) => {
 
   const userSignOut = () => {
     signOut(auth).then(() => {
+      props.onSignOut();
       navigate('/Login')
       console.log('sign out successful')
     }).catch(error => console.log(error))

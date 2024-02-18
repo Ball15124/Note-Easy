@@ -19,6 +19,10 @@ export const Home = () => {
     const [sortBy, setSortBy] = useState('date');
     const [searchQuery, setSearchQuery] = useState('');
 
+    const clearNoteArray = () => {
+        setNotes([]);
+      };
+
     const handleSearch = (query) => {
         setSearchQuery(query);
     };
@@ -185,7 +189,7 @@ export const Home = () => {
 
     return (
         <div className='HomePage'>
-            <NavBar searchQuery={searchQuery} onSearch={handleSearch} />
+            <NavBar searchQuery={searchQuery} onSearch={handleSearch} onSignOut={clearNoteArray}/>
             <div className='sort-section'>
                 <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
                     <option value="date">Sort by Date</option>

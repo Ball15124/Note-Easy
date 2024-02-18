@@ -40,9 +40,6 @@ export const Login = () => {
             <input type='text' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
             <RiLockPasswordFill className='icon' />
           </div>
-          <div className='forget'>
-            <a href='#'>forgot password ?</a>
-          </div>
           <div className='button-sign'>
             <button type='submit'>
               SIGN IN

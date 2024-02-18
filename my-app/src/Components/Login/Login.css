@@ -66,17 +66,6 @@
     color: rgb(255, 255, 255);
 }
 
-.LoginPage .forget{
-    font-size: 15px;
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-.LoginPage .forget a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
 .LoginPage .button-sign {
     display: flex;
     justify-content: center;

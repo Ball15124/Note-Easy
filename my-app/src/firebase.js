@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBWTB7hj5TaMpBUvuRxmBaPax1w-h3g8Zg",
-  authDomain: "noteeasy-7db44.firebaseapp.com",
-  projectId: "noteeasy-7db44",
-  storageBucket: "noteeasy-7db44.appspot.com",
-  messagingSenderId: "840556007015",
-  appId: "1:840556007015:web:0d0b93817286a314704ec2"
+  apiKey: "AIzaSyCH2e3bcLT4D2dNWeAT5wxnsgAvKhvHDxs",
+  authDomain: "noteeasyhost.firebaseapp.com",
+  projectId: "noteeasyhost",
+  storageBucket: "noteeasyhost.appspot.com",
+  messagingSenderId: "523914059454",
+  appId: "1:523914059454:web:e682df76f44b4cd1ae88ef"
 };
 
 // Initialize Firebase
